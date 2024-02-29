@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+/* element selector*/
+body {
+    background-color: rgb(209, 47, 47);
+    font-family: calibri;
+}
+
+/* class selector */
+.text-primary {
+    color: #000000;
+}
+
+.col {
+    width: 25%;
+    float: left;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+}
+
+.img-responsive {
+    width: 100%;
+    max-height: 5000px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.rounded {
+    border-radius: 100px;
+}
+
