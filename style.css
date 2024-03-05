@@ -1,9 +1,6 @@
-* {
-    box-sizing: border-box;
-}
-/* element selector*/
+/* element selector */
 body {
-    background-color: rgb(209, 47, 47);
+    background-color: blue;
     font-family: calibri;
 }
 
@@ -11,7 +8,6 @@ body {
 .text-primary {
     color: #000000;
 }
-
 .col {
     width: 25%;
     float: left;
@@ -23,15 +19,51 @@ body {
 }
 
 .img-responsive {
+    border-radius: 300px;
     width: 100%;
-    max-height: 5000px;
 }
 
-.circle {
-    border-radius: 50%;
+/* media query : responsive web design */
+/* tablet : layout yang ditampilkan 2 kolom */
+@media screen and (min-width: 600px){
+    body {
+        background-color: chartreuse;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+        float: left;
+    }
 }
 
-.rounded {
-    border-radius: 100px;
+/* desktop : layout yang ditampilkan 4 kolom */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: green;
+    }
+
+    .col {
+        width: 25%;
+        float: left;
+    }
+    
+}
+* {
+    box-sizing: border-box;
+}
+/* element selector*/
+body {
+    background-color: rgb(209, 47, 47);
+    font-family: calibri;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
